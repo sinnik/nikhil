@@ -1,0 +1,6 @@
+cd /
+cd /home/ubuntu/nikhil/Dockerdemo
+docker stop helloworld
+docker rm helloworld
+docker build -t hello-world /home/ubuntu/nikhil/
+docker run -d --name helloworld -p 80:80 -v /home/ubuntu/nikhil/src/:/var/www/html hello-world
